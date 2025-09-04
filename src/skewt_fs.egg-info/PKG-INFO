@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: skewt-fs
-Version: 0.1.1
+Version: 0.1.2
 Summary: An implementation of the Fernandez-Steel skewed Student's t-distribution.
 Author-email: Samarth P <samarthpardhi307@gmail.com>
 Project-URL: Homepage, https://github.com/samarthpardhi/skewt_fs

@@ -56,7 +56,8 @@ The main object is `skewt`, which behaves like any other `scipy.stats` distribut
 
 ### Importing
 ```python
-from skewt_fs import skewt
+from skewt_fs import distribution
+skewt = distribution.skewt
 ```
 
 ### Basic Operations
@@ -94,6 +95,7 @@ Use the `.rvs()` method to generate random variates.
 samples = skewt.rvs(df=df, gamma=gamma, size=1000)
 
 # Verify sample moments
+import numpy as np
 print(f"Sample Mean: {np.mean(samples):.4f}")
 print(f"Sample Variance: {np.var(samples):.4f}")
 ```
@@ -103,6 +105,7 @@ You can easily plot the distribution to visualize the effect of the parameters.
 
 ```python
 # Set up the plot
+import matplotlib.pyplot as plt
 fig, ax = plt.subplots(figsize=(10, 6))
 x = np.linspace(skewt.ppf(0.001, df, gamma), skewt.ppf(0.999, df, gamma), 200)
 

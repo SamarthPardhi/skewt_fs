@@ -1,7 +1,7 @@
 README.md
 pyproject.toml
-src/__init__.py
-src/distribution.py
+src/skewt_fs/__init__.py
+src/skewt_fs/distribution.py
 src/skewt_fs.egg-info/PKG-INFO
 src/skewt_fs.egg-info/SOURCES.txt
 src/skewt_fs.egg-info/dependency_links.txt

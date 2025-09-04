@@ -138,3 +138,6 @@ class skewt_gen(rv_continuous):
             var = e_x2 - mean**2
             
         return mean, var, np.nan, np.nan # Skew and kurtosis not implemented
+
+# Create an instance of the class
+skewt = skewt_gen(name='skewt', a=-np.inf, b=np.inf)

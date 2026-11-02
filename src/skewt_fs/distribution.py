@@ -76,7 +76,7 @@ class skewt_gen(rv_continuous):
         cdf_val = c * (
             (symmetric_t.cdf(x / gamma) - 0.5) * gamma * is_positive +
             symmetric_t.cdf(x * gamma) / gamma * (1 - is_positive) +
-            0.5 * gamma * is_positive
+            0.5 / gamma * is_positive
         )
         return cdf_val
 
